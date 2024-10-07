@@ -8,7 +8,7 @@ import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
 fun TestButton(modifier: Modifier) {
-    Text(modifier = modifier, text = CoreSingleton.buttonText, color = Color.Blue)
+    Text(modifier = modifier, text = CoreSingleton.buttonText, color = Color.Red)
 }
 
 @Preview
