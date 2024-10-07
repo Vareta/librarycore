@@ -68,7 +68,7 @@ afterEvaluate {
             register<MavenPublication>("release") {
                 groupId = "com.github.Vareta"
                 artifactId = "librarycore"
-                version = "0.5"
+                version = "0.6"
                 afterEvaluate {
                     from(components["release"])
                 }
