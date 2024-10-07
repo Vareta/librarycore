@@ -7,7 +7,7 @@ import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
 fun TestButton(modifier: Modifier) {
-    Text(modifier = modifier, text = "Mensaje de prueba para botón")
+    Text(modifier = modifier, text = CoreSingleton.buttonText)
 }
 
 @Preview
