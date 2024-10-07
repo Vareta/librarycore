@@ -60,3 +60,19 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
 }
+
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            register<MavenPublication>("release") {
+                groupId = "com.github.Vareta"
+                artifactId = "librarycore"
+                version = "0.3"
+                afterEvaluate {
+                    from(components["release"])
+                }
+            }
+        }
+    }
+}
